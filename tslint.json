@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-floating-promises": false,
+    "member-access": false,
+    "trailing-comma": {
+      "options": {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    }
+  },
+  "linterOptions": {
+    "exclude": [
+      "tools"
+    ]
+  }
+}
