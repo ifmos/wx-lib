@@ -1,6 +1,6 @@
 {
   "name": "wx-lib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "keywords": [],
   "main": "dist/wx-lib.umd.js",
@@ -9,10 +9,10 @@
   "files": [
     "dist"
   ],
-  "author": "moswen <moswen@meijiabang.cn>",
+  "author": "Mos <acwzy@live.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:ifmos/wx-lib.git"
   },
   "license": "MIT",
   "engines": {
