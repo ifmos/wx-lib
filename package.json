@@ -1,6 +1,6 @@
 {
   "name": "wx-lib",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "keywords": [],
   "main": "dist/wx-lib.umd.js",
