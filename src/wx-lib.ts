@@ -15,8 +15,6 @@ declare global {
   }
 }
 
-const wx = window.wx
-
 export interface IShareConfig {
   imgUrl: string
   title: string
@@ -87,6 +85,7 @@ export default class WeChatLib {
         signature = '',
         jsApiList = [],
       } = signConfig
+      const wx = window.wx
       wx.config({
         appId,
         jsApiList,
