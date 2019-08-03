@@ -69,6 +69,7 @@ export default class WeChatLib {
   constructor() {
     if (this.isWeChat) {
       getWeChatSDK().then(() => {
+        this.SDKReady = true
         execute(callbacksMap.get('SDKReady'))
       })
     }
@@ -84,18 +85,19 @@ export default class WeChatLib {
         timestamp = new Date().getTime(),
         nonceStr = '',
         signature = '',
-        jsApiList = []
+        jsApiList = [],
       } = signConfig
       wx.config({
         appId,
         jsApiList,
         nonceStr,
         signature,
-        timestamp
+        timestamp,
       })
       wx.ready(() => {
-        resolve()
+        this.signed = true
         execute(callbacksMap.get('signed'))
+        resolve()
       })
       wx.error(() => {
         reject()
