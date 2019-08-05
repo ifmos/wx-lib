@@ -98,8 +98,8 @@ export default class WeChatLib {
         execute(callbacksMap.get('signed'))
         resolve()
       })
-      wx.error(() => {
-        reject()
+      wx.error(err => {
+        reject(err)
       })
     })
   }
